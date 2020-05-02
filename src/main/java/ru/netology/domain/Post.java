@@ -19,7 +19,7 @@ public class Post {
     private long replyOwnerId;  // Replied post's owner id
     private long replyPostId;  // Replied post's id.
     private boolean friendsOnly;  // if a post is marked "Friends only".
-    private String post_type;  // Type of the post, can be: post, copy, reply, postpone, suggest.
+    private String postType;  // Type of the post, can be: post, copy, reply, postpone, suggest.
     private PostSource postSource;  // Information about the means of posting
     private GeoLocation geo;  // Information about location
     private long signerId;  // author ID (if the post has been published by the community name with the author sign)
@@ -70,12 +70,12 @@ public class Post {
         this.friendsOnly = friendsOnly;
     }
 
-    public String getPost_type() {
-        return post_type;
+    public String getPostType() {
+        return postType;
     }
 
-    public void setPost_type(String post_type) {
-        this.post_type = post_type;
+    public void setPostType(String postType) {
+        this.postType = postType;
     }
 
     public PostSource getPostSource() {

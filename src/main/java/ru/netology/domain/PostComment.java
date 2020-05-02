@@ -6,7 +6,7 @@ public class PostComment {
     private long id;
     private long ownerId;
     private Date publicationTime;
-    private String Text;
+    private String text;
     private long parentId;
 
     public long getId() {
@@ -34,11 +34,11 @@ public class PostComment {
     }
 
     public String getText() {
-        return Text;
+        return text;
     }
 
     public void setText(String text) {
-        Text = text;
+        this.text = text;
     }
 
     public long getParentId() {
